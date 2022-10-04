@@ -1,113 +1,84 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-
-  <section class="bcls-section">
-    <aside class="bcls-aside bcls-aside--information language-editable">This document is one part of the OTT Plugins document collection. Since OTT Plugins are implemented using JavaScript and CSS, the target audience for this document is developers with some experience with both of those technologies. To learn more about OTT Plugins see the <a href="/ott-plugins/index.html">OTT Plugins documentation home page</a>.</aside>
-    <h2 id="Introduction">Introduction</h2>
-    <p>OTT plugins allow you to customize your web apps in ways that are not available through the normal page creation process in {{ site.product_short }} Studio. Here are a few examples:</p>
-    <h3>Custom buttons</h3>
-    <p>Add custom buttons. In this case the buttons provide functionality to download the playing video and see the location of the filming.</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-ott-plugins-img/buttons/custom-buttons.png" alt="custom buttons">
-    </figure>
-    <h3>Custom content areas</h3>
-    <p>Add text to special <code>&lt;div&gt;</code>s set aside for extra content. </p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-ott-plugins-img/custom-divs/div-mid-page.png" alt="">
-    </figure>
-    <h3>Side panel</h3>
-    <p>This short video shows a OTT plugin that was created to display a panel that can be opened and closed by a viewer.</p>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section"> <aside class="bcls-aside bcls-aside--information language-editable"> Ce document fait partie de la collection de documents OTT Plugins. Étant donné que les plugins OTT sont implémentés à l'aide de JavaScript et de CSS, le public cible de ce document est constitué de développeurs ayant une certaine expérience de ces deux technologies. Pour en savoir plus sur les plug-ins OTT, consultez la<a href="/ott-plugins/index.html"> page</a> d'accueil de la documentation des plug-ins</aside>
+    <h2 id="Introduction">Présentation</h2>
+    <p>Les plug-ins OTT vous permettent de personnaliser vos applications Web d'une manière qui n'est pas disponible lors du processus normal de création de page dans {{site.product_short}} Studio. Voici quelques exemples:</p>
+    <h3>Boutons personnalisés</h3>
+    <p>Ajoutez des boutons personnalisés. Dans ce cas, les boutons permettent de télécharger la vidéo en cours de lecteur et de voir l'emplacement du tournage.</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-ott-plugins-img/buttons/custom-buttons.png" alt="boutons personnalisés"> </figure>
+    <h3>Zones de contenu personnalisées</h3>
+    <p>Ajoutez du texte aux <code>&lt;div&gt;</code> s spéciaux réservés pour du contenu supplémentaire. </p>   <figure class="bcls-figure"><img class="bcls-image" src="/assets/images/s-ott-plugins-img/custom-divs/div-mid-page.png" alt=""></figure>
+    <h3>Panneau latéral</h3>
+    <p>Cette courte vidéo montre un plugin OTT créé pour afficher un panneau qui peut être ouvert et fermé par un spectateur.</p>
     <div style="position: relative; display: block; max-width: 960px;">
       <div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/1752604059001/default_default/index.html?videoId=1722964957659610162" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
     </div>
-    <h3>Custom pages</h3>
-    <p>Create new pages with HTML content of your choice.</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-ott-plugins-img/custom-pages/page-in-app.png" alt="">
-    </figure>
+    <h3>Pages personnalisées</h3>
+    <p>Créez de nouvelles pages avec le contenu HTML de votre choix.</p>   <figure class="bcls-figure"><img class="bcls-image" src="/assets/images/s-ott-plugins-img/custom-pages/page-in-app.png" alt=""></figure>
 
-    <p>The plugin functionality is controlled with JavaScript and CSS. <em>This means that to implement OTT plugins some experience with JavaScript and CSS is required.</em></p>
-    <h3>Implementation startup</h3>
-    <p>The plugin code is read in by your {{ site.product_short }} web app. In Beacon Classic, you point to one JavaScript file and one CSS file that are loaded at app startup. Here is a screenshot where the data is entered in Beacon Classic:</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-ott-plugins-img/learning-guide/cms-web-customization.png" alt="cms web customization">
-    </figure>
-    <p>The files must be located at a publicly addressable URL and be named as follows:</p>
+    <p>La fonctionnalité du plugin est contrôlée par JavaScript et CSS. <em>Cela signifie que pour implémenter des plugins OTT, une certaine expérience de JavaScript et CSS est requise.</em></p>
+    <h3>Démarrage d'implémentation</h3>
+    <p>Le code du plugin est lu par votre application Web {{site.product_short}}. Dans Beacon Classic, vous pointez sur un fichier JavaScript et un fichier CSS qui sont chargés au démarrage de l'application. Voici une capture d'écran où les données sont saisies dans Beacon Classic:</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-ott-plugins-img/learning-guide/cms-web-customization.png" alt="personnalisation web cms"> </figure>
+    <p>Les fichiers doivent se trouver sur une URL publiquement adressable et être nommés comme suit:</p>
     <ul>
-      <li>The JavaScript file must be called <strong>index.js</strong></li>
-      <li>The optional CSS file must be called <strong>index.css</strong></li>
-    </ul>
-  </section>
-
-
-  <section class="bcls-section">
-    <h2 id="Available_elements">Available elements</h2>
-    <p>The following table shows all OTT plugin elements with a brief description of the purpose/functionality:</p>
+      <li>Le fichier JavaScript doit être appelé<strong> index.js</strong></li>
+      <li>Le fichier CSS optionnel doit être appelé<strong> index.css</strong></li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Available_elements">Eléments disponibles</h2>
+    <p>Le tableau suivant présente tous les éléments du plugin OTT avec une brève description de l'objectif/de la fonctionnalité:</p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
           <th>Element</th>
-          <th>Functionality</th>
+          <th>Fonctionnalité</th>
         </tr>
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td><a href="/ott-plugins/working-with-page-events.html">Page events and data</a></td>
-          <td>Listen for page events like page loading, unloading and changing</td>
+          <td><a href="/ott-plugins/working-with-page-events.html">Événements de page et données</a></td>
+          <td>Écoutez les événements de page tels que le chargement, le déchargement et la modification de pages</td>
         </tr>
         <tr>
-          <td><a href="/ott-plugins/user-events.html">User events and data</a></td>
-          <td>Listen for user events like sign in, register and sign out</td>
+          <td><a href="/ott-plugins/user-events.html">Evénements et données des utilisateurs</a></td>
+          <td>Écouter les événements utilisateur tels que se connecter, s'inscrire et se déconnecter</td>
         </tr>
         <tr>
-          <td><a href="/ott-plugins/side-panel.html">Side panel events and data</a></td>
-          <td>Open and close the side panel and listen for events of side panel behavior</td>
+          <td><a href="/ott-plugins/side-panel.html">Événements et données du panneau latéral</a></td>
+          <td>Ouvrez et fermez le panneau latéral et écoutez les événements liés au comportement du panneau latéral</td>
         </tr>
         <tr>
-          <td><a href="/ott-plugins/buttons-and-events.html">Custom buttons events and data</a></td>
-          <td>Add and remove buttons and listen for click events</td>
+          <td><a href="/ott-plugins/buttons-and-events.html">Boutons personnalisés, événements et données</a></td>
+          <td>Ajoutez et supprimez des boutons et écoutez les événements de clics</td>
         </tr>
         <tr>
-          <td><a href="/ott-plugins/custom-divs.html">Custom sections</a></td>
-          <td>Place custom content in custom <code>&lt;div&gt;</code>s</td>
+          <td><a href="/ott-plugins/custom-divs.html">Sections personnalisées</a></td>
+          <td>Placer du contenu personnalisé dans des <code>&lt;div&gt;</code> s personnalisés</td>
         </tr>
         <tr>
-          <td><a href="/ott-plugins/custom-page.html">Custom pages</a></td>
-          <td>Create a custom page in the {{ site.product_short }} Studio then populate with dynamically built HTML of your choice</td>
+          <td><a href="/ott-plugins/custom-page.html">Pages personnalisées</a></td>
+          <td>Créez une page personnalisée dans le studio {{site.product_short}}, puis remplissez-la avec le code HTML généré dynamiquement de votre choix</td>
         </tr>
       </tbody>
-    </table>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note that the element names in the table are linked to the detailed documentation for that element. The detailed documentation shows the available functionality and implementation details.</aside>
-  </section>
-
-
-  <section class="bcls-section">
-    <h2 id="Implementation_architecture">Implementation architecture</h2>
-    <p>As mentioned earlier, OTT Plugins are implemented with JavaScript and CSS. Obviously, there are many ways to structure your JavaScript code. For instance:</p>
+    </table> <aside class="bcls-aside bcls-aside--information language-editable">Notez que les noms des éléments du tableau sont liés à la documentation détaillée de cet élément. La documentation détaillée présente les fonctionnalités disponibles et les détails de mise en œuvre.</aside> </section> <section class="bcls-section">
+    <h2 id="Implementation_architecture">Architecture d'implémentation</h2>
+    <p>Comme mentionné précédemment, les plugins OTT sont implémentés avec JavaScript et CSS. De toute évidence, il existe de nombreuses manières de structurer votre code JavaScript. Par exemple:</p>
     <ul>
-      <li>You could simply put all your code the single <strong>index.js</strong> file mentioned earlier.</li>
-      <li>Brightcove's consulting team did an implementation of the plugins using <a href="https://reactjs.org/">React</a>, a JavaScript library for building user interfaces.</li>
+      <li>Vous pouvez simplement mettre tout votre code dans le seul<strong> fichier</strong> index.js mentionné précédemment.</li>
+      <li>L'équipe de consultants de Brightcove a réalisé une implémentation des plug-ins à l'aide de<a href="https://reactjs.org/"> React</a>, une bibliothèque JavaScript permettant de créer des interfaces utilisateur.</li>
     </ul>
-    <p>For the documents on this site, it was decided that the one file approach would lead to poor coding practices. React was maybe more than what was needed when the exact JavaScript skill sets of {{ site.product_short }} Studio customers is not known. This led to the decision to use JavaScript modules for implementation and examples in this documentation.</p>
-    <p>The <a href="/ott-plugins/javascript-modules-beacon-plugins.html">Using JavaScript Modules for OTT Plugins</a> document explains the basic programming model around OTT Plugins, and how JavaScript modules can be used for code implementation.</p>
-    <p>Of course, you are free to organize your JavaScript code in any way you wish.</p>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Additional documentation">Additional documentation and resources</h2>
-    <p>The following documents and GitHub repo are additional resources covering OTT plugins:</p>
+    <p>Pour les documents de ce site, il a été décidé que l'approche d'un seul fichier conduirait à de mauvaises pratiques de codage. React était peut-être plus que ce qui était nécessaire lorsque les compétences JavaScript exactes des clients de {{site.product_short}} Studio ne sont pas connues. Cela a conduit à la décision d'utiliser des modules JavaScript pour la mise en œuvre et des exemples dans cette documentation.</p>
+    <p>Le<a href="/ott-plugins/javascript-modules-beacon-plugins.html"> document</a> Using JavaScript Modules for OTT Plugins explique le modèle de programmation de base autour des plug-ins OTT et explique comment les modules JavaScript peuvent être utilisés pour l'implémentation de code.</p>
+    <p>Bien entendu, vous êtes libre d'organiser votre code JavaScript comme bon vous semble.</p>  </section><section class="bcls-section">
+    <h2 id="Additional documentation">Documentation et ressources supplémentaires</h2>
+    <p>Les documents suivants et le référentiel GitHub sont des ressources supplémentaires couvrant les plugins OTT:</p>
     <ul>
-      <li><a href="/ott-plugins/dispatching-handling-events.html">Dispatching and Handling Events in OTT Plugins</a></li>
-      <li><a href="/ott-plugins/javascript-modules-beacon-plugins.html">Using JavaScript Modules for OTT Plugins</a></li>
-      <li><a href="/ott-plugins/custom-divs.html">Implementing Custom Sections</a></li>
-      <li><a href="/ott-plugins/buttons-and-events.html">Implementing Buttons and Event Handlers</a></li>
-      <li><a href="/ott-plugins/side-panel.html">Implementing the Side Panel</a></li>
-      <li><a href="/ott-plugins/working-with-page-events.html">Working with Page Events</a></li>
-      <li><a href="/ott-plugins/user-events.html">Implementing User Events</a></li>
-      <li><a href="/ott-plugins/custom-page.html">Creating a Custom Page</a></li>
-      <li><a href="/ott-plugins/data-module.html">Storing Data in a Separate Module</a></li>
-      <li><a href="https://github.com/BrightcoveLearning/ott-plugins-example-code">ott-plugins-example-code</a> GitHub repo</li>
-    </ul>
-  </section>
-</article>
+      <li><a href="/ott-plugins/dispatching-handling-events.html">Répartition et gestion des événements dans les plug-ins OTT</a></li>
+      <li><a href="/ott-plugins/javascript-modules-beacon-plugins.html">Utilisation de modules JavaScript pour les plug-ins OTT</a></li>
+      <li><a href="/ott-plugins/custom-divs.html">Implémentation des sections</a></li>
+      <li><a href="/ott-plugins/buttons-and-events.html">Implémentation des boutons et des gestionnaires d'événements</a></li>
+      <li><a href="/ott-plugins/side-panel.html">Mise en œuvre du panneau latéral</a></li>
+      <li><a href="/ott-plugins/working-with-page-events.html">Utilisation des événements de page</a></li>
+      <li><a href="/ott-plugins/user-events.html">Implémentation des événements</a></li>
+      <li><a href="/ott-plugins/custom-page.html">Création d'une page personnalisée</a></li>
+      <li><a href="/ott-plugins/data-module.html">Stockage des données dans un module séparé</a></li>
+      <li><a href="https://github.com/BrightcoveLearning/ott-plugins-example-code">référentiel</a> GitHub OTT-Plugins-exemple-code</li>
+    </ul>  </section></article>
